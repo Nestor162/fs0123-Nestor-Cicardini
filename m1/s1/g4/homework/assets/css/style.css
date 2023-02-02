@@ -19,6 +19,17 @@ h1 {
     line-height: 35px;
 }
 
+strong {
+    color: #AA2072;
+    font-weight: bold;
+}
+
+code {
+    background-color: #DDDDDE;
+    border: 2px solid #aaa;
+    border-radius: 10%;
+}
+
 /* HEADER */
 .logo {
     width: 250px;
@@ -67,11 +78,22 @@ main {
 /* ELEMENTI NEL MAIN - ARTICLE */
 .author {
     color:#94AA99;
-    margin-bottom: 20px;
 }
 
 article p {
     padding: 20px 0;
+}
+
+article ul li {
+    list-style-type: disc;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+article ol li {
+    list-style-type: revert;
+    margin-left: 35px;
+    line-height: 25px;
 }
 
 /* TABELLE */
