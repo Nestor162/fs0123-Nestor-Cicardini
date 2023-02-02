@@ -114,6 +114,11 @@ article ol li {
     list-style-type: revert;
     margin-left: 35px;
     line-height: 25px;
+    padding-left: 0;
+}
+
+li span {
+    margin-left:-1.2rem;
 }
 
 .video {
