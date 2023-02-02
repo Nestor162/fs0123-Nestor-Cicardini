@@ -20,14 +20,24 @@ h1 {
 }
 
 strong {
-    color: #AA2072;
+    color: #aa2072;
     font-weight: bold;
 }
 
 code {
-    background-color: #DDDDDE;
+    background-color: #ddddde;
     border: 2px solid #aaa;
     border-radius: 10%;
+}
+
+caption {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #0099cc;
 }
 
 /* HEADER */
@@ -68,6 +78,10 @@ li::after {
     font-weight: bold;
 }
 
+header li {
+    line-height: 1.5rem;
+}
+
 /* MAIN */
 main {
     background-color: #fff;
@@ -77,7 +91,7 @@ main {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 .author {
-    color:#94AA99;
+    color:#94aa99;
 }
 
 article p {
@@ -102,19 +116,19 @@ tr td, th {
 }
 
 th {
-    background-color: #3567E9;
+    background-color: #3567e9;
     color: #fff;
 }
 
 tbody tr:nth-child(even) {
     background-color: #eee;
-    border-top: 2px solid #DDDDDE;
-    border-bottom: 2px solid #DDDDDE;
+    border-top: 2px solid #ddddde;
+    border-bottom: 2px solid #ddddde;
 
 }
 
 tbody tr:last-child {
-    border-bottom: 2px solid #3366CC;
+    border-bottom: 2px solid #3366cc;
 }
 
 /* FORM */
