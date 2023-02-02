@@ -152,7 +152,17 @@ tbody tr:last-child {
 }
 
 /* FORM */
+.subtitle {
+    text-transform: uppercase;
+}
 
 /* ELEMENTI NELL' ASIDE */
+
+.related__article {
+    background-color: #e0e0e1;
+    margin: 18px 0;
+    padding: 18px;
+    border: 3px solid #ccc;
+}
 
 /* FOOTER */
