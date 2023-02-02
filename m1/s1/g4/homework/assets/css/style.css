@@ -101,7 +101,7 @@ main {
 }
 
 article p {
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 article ul li {
@@ -156,6 +156,18 @@ tbody tr:last-child {
     text-transform: uppercase;
 }
 
+.newsletter {
+    background-color: #e0e0e1;
+    margin: 18px 0;
+    padding: 18px;;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 32px 0;
+}
 /* ELEMENTI NELL' ASIDE */
 
 .related__article {
