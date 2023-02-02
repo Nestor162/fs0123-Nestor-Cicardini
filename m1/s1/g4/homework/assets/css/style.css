@@ -97,6 +97,25 @@ article ol li {
 }
 
 /* TABELLE */
+tr td, th {
+    padding: 18px;
+}
+
+th {
+    background-color: #3567E9;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+    border-top: 2px solid #DDDDDE;
+    border-bottom: 2px solid #DDDDDE;
+
+}
+
+tbody tr:last-child {
+    border-bottom: 2px solid #3366CC;
+}
 
 /* FORM */
 
