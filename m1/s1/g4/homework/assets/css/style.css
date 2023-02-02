@@ -40,6 +40,12 @@ a {
     color: #0099cc;
 }
 
+iframe {
+    border-radius: 10%;
+    max-width: 100%;
+    min-width: auto;
+}
+
 /* HEADER */
 .logo {
     width: 250px;
@@ -108,6 +114,11 @@ article ol li {
     list-style-type: revert;
     margin-left: 35px;
     line-height: 25px;
+}
+
+.video {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* TABELLE */
