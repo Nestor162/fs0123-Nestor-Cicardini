@@ -62,11 +62,18 @@ footer {
 }
 
 /* CONTENUTO SECONDARIO */
+.secondary__group {
+    margin-top: 35px;
+    padding: 0 25px;
+    text-align: center;
+}
+
 .secondary__img {
     border-radius: 100%;
-    width: 75%;
+    width: 290px;
     display: block;
     margin: 0 auto;
+    margin-top: 35px;
 }
 
 .last {
