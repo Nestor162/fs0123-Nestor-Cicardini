@@ -102,7 +102,11 @@ footer {
 
 
 /* ASIDE */
+.card-flex {
+    display: flex;
+}
 .card {
+    width: 50%;
     border: 2px solid #dee1e3;
     margin-top: 28px;
     margin: 25px;
