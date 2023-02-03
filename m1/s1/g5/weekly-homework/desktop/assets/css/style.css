@@ -153,6 +153,11 @@ footer {
     line-height: 2rem;
 }
 
+.footer__division-line {
+    border-bottom: 2px solid #fff;
+    margin: 23px -7px;
+}
+
 .footer__icon {
     margin-right: 7px;
 }
