@@ -22,10 +22,10 @@ footer {
 .logo {
     background-color: #000;
     text-align: center;
-    height: 125px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 20px;
 }
 
 .logo__immagine {
@@ -39,7 +39,7 @@ footer {
     text-align: center;
     background-image: url("../images/banner.jpg");
     background-size: cover;
-    padding: 44px 25px;
+    padding: 205px 25px;
 }
 
 .intro__title {
