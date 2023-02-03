@@ -32,10 +32,29 @@ footer {
     width: 200px;
 }
 
+/* ARTICOLO PRINCIPALE */
+.intro__button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #f04c2f;
+}
+
+.last {
+    background-color: #e22d0e;
+}
+
+/* ASIDE */
+.card {
+    border: 2px solid #dee1e3;
+}
 
 /* FOOTER */
+.footer {
+    background-color: #25a2c3;
+}
+
 .footer__title {
-    color: white;
+    color: #fff;
 }
 
 .footer__link {
