@@ -17,6 +17,7 @@ footer {
     color: #c8e7f0;
 }
 
+
 /* HEADER */
 .logo {
     background-color: #000;
@@ -32,13 +33,13 @@ footer {
     width: 200px;
 }
 
-/* ARTICOLO PRINCIPALE */
 
+/* ARTICOLO PRINCIPALE */
 .intro {
     text-align: center;
     background-image: url("../images/banner.jpg");
     background-size: cover;
-    padding: 40px 25px 35px 25px;
+    padding: 44px 25px;
 }
 
 .intro__title {
@@ -60,14 +61,28 @@ footer {
     border-radius: 5px;
 }
 
+/* CONTENUTO SECONDARIO */
+.secondary__img {
+    border-radius: 100%;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
 .last {
     background-color: #e22d0e;
 }
+
 
 /* ASIDE */
 .card {
     border: 2px solid #dee1e3;
 }
+
+.card__image {
+    max-width: 100%;
+}
+
 
 /* FOOTER */
 .footer {
