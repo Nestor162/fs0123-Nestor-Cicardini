@@ -1,0 +1,43 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color:#393d41;
+    line-height: 1.65rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #25a2c3;
+    line-height: 1.5rem;
+}
+
+footer {
+    color: #c8e7f0;
+}
+
+/* HEADER */
+.logo {
+    background-color: #000;
+    text-align: center;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__immagine {
+    max-width: 100%;
+    width: 200px;
+}
+
+
+/* FOOTER */
+.footer__title {
+    color: white;
+}
+
+.footer__link {
+    color: #c8e7f0;
+}
