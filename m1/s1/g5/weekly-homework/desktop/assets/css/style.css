@@ -61,10 +61,16 @@ footer {
 }
 
 /* CONTENUTO SECONDARIO */
+.secondary {
+    display: flex;
+    padding: 45px 100px;
+}
+
 .secondary__group {
+    display: flex;
+    flex-direction: column;
     margin-top: 35px;
     padding: 0 25px;
-    text-align: center;
 }
 
 .secondary__img {
