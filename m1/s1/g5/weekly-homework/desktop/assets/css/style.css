@@ -130,9 +130,12 @@ footer {
 /* FOOTER */
 .footer {
     background-color: #25a2c3;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer__group {
     padding: 40px 30px;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .footer__title {
