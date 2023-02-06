@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili</title>
+</head>
+<body>
+    
+    <script>
+        // variabile solo puo iniziare con '$', '_' o una lettera.
+        // non si possono usare parole riservate (come var).
+        var numero = 5;
+
+        // usare notazione camelCase
+        var nomeUtente = 'Mario';
+
+        console.log(nomeUtente, numero);
+
+        // debolmente  tipizzato
+        var esempio = 5;
+        esempio = 'ciao';
+        esempio = true;
+
+        var saluto = 'Ciao';
+
+        console.log(saluto + ' ' + nomeUtente); // '+' puo essere usato per concatenare stringe
+
+        var num = 10;
+        var numString = '10';
+
+        console.log(num + numString); // in questo caso viene fatto un concatenamento
+        console.log(num * numString); // in questo altro caso si fa la moltiplicazione tra due numeri, perche il simbolo '*' ha solo funzione moltiplicativa
+        console.log(num * 'a10'); // restitusice NaN (not a number) perche la stringa contiene anche una lettera
+
+        console.log(typeof numString); // restituisce il tipo di valore. Puo essere usata senza parentesi tonda
+    </script>
+
+</body>
+</html>

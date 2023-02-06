@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titolo">Hello, world</h1>
+
+    <!-- Tag script prima della chiusura di body (script locale)
+    Per poche funzioni in una sola pagina usare questo sistema -->
+    <script>
+        // FUNZIONE alert
+        // virgolette doppie o singole
+        // Non usare questa funzione perchè bloccante e fastidiosa
+
+        // alert("Hello, world");
+
+        document.getElementById('titolo').textContent = 'Hello, Js'
+    </script>
+
+
+    <!-- 
+        Colegamento a script esterno
+        Si possono collegare più script, anche usando tutti i due metodi
+        Non collegarlo mai al head
+     -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
