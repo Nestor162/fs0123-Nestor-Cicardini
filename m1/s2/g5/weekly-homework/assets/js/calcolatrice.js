@@ -8,10 +8,11 @@ function printSymbol(symbolToPrint) {
 }
 
 function calcResult() {
-    document.querySelector("#display").value = eval(display.value);
+    // metodo alternativo a eval, crea una nuova funzione anonima che 'ritorna' il risultato dell' operazione
+    let trasform = Function("return " + display.value)();
+    document.querySelector("#display").value = trasform;
 }
 
 function clearDisplay() {
-    console.log("elprpr");
     document.querySelector("#display").value = " ";
 }
