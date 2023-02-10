@@ -12,6 +12,9 @@
         <div class="calculator">
             <input type="text" id="display" />
 
+            <div data-symbol="7" class="key" onclick="getSymbol(this)">
+                <span>7</span>
+            </div>
             <div data-symbol="8" class="key" onclick="getSymbol(this)">
                 <span>8</span>
             </div>
@@ -24,9 +27,6 @@
             <div data-symbol="4" class="key" onclick="getSymbol(this)">
                 <span>4</span>
             </div>
-            <div data-symbol="7" class="key" onclick="getSymbol(this)">
-                <span>7</span>
-            </div>
             <div data-symbol="5" class="key" onclick="getSymbol(this)">
                 <span>5</span>
             </div>
@@ -34,7 +34,7 @@
                 <span>6</span>
             </div>
             <div data-symbol="*" class="key" onclick="getSymbol(this)">
-                <span>x</span>
+                <span>X</span>
             </div>
             <div data-symbol="1" class="key" onclick="getSymbol(this)">
                 <span>1</span>
@@ -60,8 +60,8 @@
             <div data-symbol="+" class="key" onclick="getSymbol(this)">
                 <span>+</span>
             </div>
-            <div class="key" onclick="calcResult()">
-                <span>=</span>
+            <div class="key equal" onclick="calcResult()">
+                <span class="equal">=</span>
             </div>
         </div>
 

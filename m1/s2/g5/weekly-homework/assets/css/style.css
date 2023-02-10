@@ -31,7 +31,14 @@
     cursor: pointer;
 }
 
+.equal {
+    width: calc(100% - 0.5rem);
+}
 .key span {
     display: inline-block;
     padding: 20% 0;
+}
+
+.equal span {
+    padding: 10px 0;
 }
