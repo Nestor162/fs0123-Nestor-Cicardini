@@ -48,7 +48,7 @@ h1 {
 }
 
 .equal {
-    width: calc(100% - 0.5rem - 75px);
+    width: calc(100% - 0.5rem - 72.5px);
 }
 
 .key span {
@@ -64,7 +64,7 @@ h1 {
     padding: 22px 0;
 }
 
-.extra {
+.scientific_area {
     display: none;
 }
 

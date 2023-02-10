@@ -16,10 +16,22 @@ function calcResult() {
 function clearDisplay() {
     document.querySelector("#display").value = " ";
 }
-
-function scientific() {
-    let extra_keys = document.querySelectorAll(".extra");
-    for (extra of extra_keys) {
-        extra.style.display = "inline-block";
-    }
+function enableScientific() {
+    let extra_keys = document.querySelector(".scientific_area");
+    showScientific(extra_keys);
 }
+
+function showScientific(extra_keys) {
+    extra_keys.style.display = "block";
+}
+
+// Ho provato a  mostrare/nascondere i tasti scientifici. Ma la funzione partiva soltanto al secondo click
+/* function scientific(extra_keys) {
+    displayType = extra_keys.style.display;
+    if (displayType == "none") {
+        extra_keys.style.display = "block";
+    }
+    else {
+        extra_keys.style.display = "none";
+    }
+} */
