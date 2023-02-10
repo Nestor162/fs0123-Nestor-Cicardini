@@ -32,13 +32,22 @@
 }
 
 .equal {
-    width: calc(100% - 0.5rem);
+    width: calc(100% - 0.5rem - 75px);
 }
+
 .key span {
     display: inline-block;
-    padding: 20% 0;
+    padding: 12px 0;
 }
 
 .equal span {
     padding: 10px 0;
+}
+
+.scientific_area .scientific_key {
+    padding: 22px 0;
+}
+
+.extra {
+    display: none;
 }

@@ -16,3 +16,10 @@ function calcResult() {
 function clearDisplay() {
     document.querySelector("#display").value = " ";
 }
+
+function scientific() {
+    let extra_keys = document.querySelectorAll(".extra");
+    for (extra of extra_keys) {
+        extra.style.display = "inline-block";
+    }
+}
