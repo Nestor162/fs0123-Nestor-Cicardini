@@ -1,5 +1,6 @@
 body {
     background-image: url("../img/bg.png");
+    font-family: "Coming Soon", cursive;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
 
 .key span {
     display: inline-block;
-    padding: 12px 0;
+    padding: 8px 0;
 }
 
 .equal span {
