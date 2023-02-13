@@ -65,10 +65,10 @@ console.log(shoppingCartTotal(shoppingCart));
 function addToShoppingCart(shoppingCart) {
     const prodotto4 = { price: 7, name: "prodotto4", id: 3, quantity: 2 };
     shoppingCart.push(prodotto4);
+    return `il carrello ha ${shoppingCart.length} elementi`;
 }
 
-addToShoppingCart(shoppingCart);
-console.log(shoppingCart);
+console.log(addToShoppingCart(shoppingCart));
 
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
