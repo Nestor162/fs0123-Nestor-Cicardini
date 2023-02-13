@@ -6,7 +6,21 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function checkArray(random) {
+    let sum = 0;
+    let risultato = "";
+    for (numero of random) {
+        if (numero > 5) {
+            sum += numero;
+            risultato += `il numero ${numero} è maggiore di 5\n`;
+        }
+    }
+    risultato += `La somma è ${sum}`;
+    return risultato;
+}
+
+let randomNumbers = giveMeRandom(10);
+console.log(checkArray(randomNumbers));
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
