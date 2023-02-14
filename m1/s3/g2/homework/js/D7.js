@@ -93,6 +93,12 @@ console.log(sommaCatena(arrayNumeri));
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
 
+function increment(arrayIncrement) {
+    return arrayIncrement.map((n) => n + 1);
+}
+
+console.log(increment(arrayNumeri));
+
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
