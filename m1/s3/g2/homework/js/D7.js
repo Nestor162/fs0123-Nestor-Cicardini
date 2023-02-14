@@ -289,6 +289,16 @@ console.log(ricercaFilm(movies, "tt4154796"));
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+function anni(movie) {
+    let sumYear = 0;
+    for (movie of movies) {
+        sumYear += Number(movie.Year);
+    }
+    return sumYear;
+}
+
+console.log(anni(movies));
+
 /* ESERCIZIO 18 (EXTRA)
   Scrivi una funzione per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
