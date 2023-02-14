@@ -233,6 +233,16 @@ const movies = [
 /* ESERCIZIO 12
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+function old(movies) {
+    return movies.reduce((p, c) => {
+        if (p.Year > c.Year) {
+            return c;
+        } else {
+            return p;
+        }
+    });
+}
+console.log(old(movies));
 
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
