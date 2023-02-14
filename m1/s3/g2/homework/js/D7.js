@@ -66,7 +66,7 @@ console.log(random10());
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
 
-arrayNumeri = [2, 5, 6, 3, 10, 7, 8];
+const arrayNumeri = [2, 5, 6, 3, 10, 7, 8];
 
 function numeriPari(arrayNumeri) {
     let pari = [];
