@@ -103,6 +103,17 @@ console.log(increment(arrayNumeri));
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+const arrayParole = ["EPICODE", "is", "great"];
+function lunghezza(parole) {
+    let i = 0;
+    for (parola of parole) {
+        arrayParole[i] = parola.length;
+        i++;
+    }
+    return arrayParole;
+}
+
+console.log(lunghezza(arrayParole));
 
 /* ESERCIZIO 9 (EXTRA)
   Scrivi una funzione per eliminare solo i valori PARI da un array.
