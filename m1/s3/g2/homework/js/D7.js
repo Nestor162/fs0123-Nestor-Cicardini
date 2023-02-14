@@ -48,9 +48,19 @@ function multipliCinque() {
 }
 
 console.log(multipliCinque());
+
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
+
+function random10() {
+    const arrRandom = [];
+    for (let i = 0; i < 10; i++) {
+        arrRandom.push(Math.trunc(Math.random() * 100));
+    }
+    return arrRandom;
+}
+console.log(random10());
 
 /* ESERCIZIO 5
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
