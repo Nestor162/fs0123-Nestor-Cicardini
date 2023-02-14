@@ -77,12 +77,17 @@ function numeriPari(arrayNumeri) {
     }
     return pari;
 }
+
 console.log(`Numeri pari contenuti nell'array ${numeriPari(arrayNumeri)}`);
 
-// console.log(numeriPari());
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
+
+function sommaCatena(arraySomma) {
+    return arraySomma.reduce((total, current) => total + current);
+}
+console.log(sommaCatena(arrayNumeri));
 
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
