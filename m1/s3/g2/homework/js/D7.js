@@ -248,6 +248,12 @@ console.log(old(movies));
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+function nFilm(movies) {
+    return movies.length;
+}
+
+console.log(nFilm(movies));
+
 /* ESERCIZIO 14
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
