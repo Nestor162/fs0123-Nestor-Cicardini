@@ -119,6 +119,20 @@ console.log(lunghezza(arrayParole));
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
 
+const numeri9 = [2, 6, 7, 5, 4, 8, 7, 10];
+
+function eliminaPari(numeri) {
+    numeri.forEach((element, index) => {
+        if (element % 2 === 0) {
+            numeri.splice(index, 1);
+        }
+    });
+
+    return numeri;
+}
+
+console.log(eliminaPari(numeri9));
+
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
