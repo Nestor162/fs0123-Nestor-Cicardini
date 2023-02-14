@@ -21,14 +21,14 @@ console.log(concatenamento("hello", "world"));
  */
 
 function numeriDispari() {
-    const DISPARI = [];
+    const dispari = [];
 
     for (let i = 1; i <= 100; i++) {
         if (i % 2 !== 0) {
-            DISPARI.push(i);
+            dispari.push(i);
         }
     }
-    return DISPARI;
+    return dispari;
 }
 
 console.log(numeriDispari());
@@ -37,6 +37,17 @@ console.log(numeriDispari());
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
 
+function multipliCinque() {
+    const multipliDi5 = [];
+    for (let i = 1; i <= 100; i++) {
+        if (i % 5 === 0) {
+            multipliDi5.push(i);
+        }
+    }
+    return multipliDi5;
+}
+
+console.log(multipliCinque());
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
