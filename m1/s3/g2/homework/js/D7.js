@@ -267,6 +267,7 @@ function titoliFilm(movies) {
 }
 
 console.log(titoliFilm(movies));
+
 /* ESERCIZIO 15
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
@@ -274,6 +275,15 @@ console.log(titoliFilm(movies));
 /* ESERCIZIO 16
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+
+function ricercaFilm(movies, id) {
+    for (movie of movies) {
+        if (movie.imdbID === id) {
+            return movie;
+        }
+    }
+}
+console.log(ricercaFilm(movies, "tt4154796"));
 
 /* ESERCIZIO 17
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
