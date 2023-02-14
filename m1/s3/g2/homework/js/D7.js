@@ -12,7 +12,7 @@ function concatenamento(stringa1, stringa2) {
 
     let arraySpread = [...dueCaratteri, ...treCaratteri];
 
-    return arraySpread.join("");
+    return arraySpread.join("").toUpperCase();
 }
 console.log(concatenamento("hello", "world"));
 
@@ -66,6 +66,19 @@ console.log(random10());
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
 
+// arrayNumeri = [2, 5, 6, 3, 10, 7, 8];
+
+// function numeriPari(arrayNumeri) {
+//     let pari;
+//     for (n of arrayNumeri) {
+//         if (n % 2 === 0) {
+//             pari += n;
+//         }
+//     }
+//     return pari;
+// }
+
+// console.log(numeriPari());
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
