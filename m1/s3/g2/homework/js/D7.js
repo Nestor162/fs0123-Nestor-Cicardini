@@ -258,6 +258,15 @@ console.log(nFilm(movies));
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+function titoliFilm(movies) {
+    let titoli = "";
+    for (titolo of movies) {
+        titoli += `${titolo.Title}\n`;
+    }
+    return titoli;
+}
+
+console.log(titoliFilm(movies));
 /* ESERCIZIO 15
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
