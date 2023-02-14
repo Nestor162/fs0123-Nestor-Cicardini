@@ -142,6 +142,14 @@ console.log(eliminaPari(numeri9));
   es: [1, 3, 5] ==> [5, 3, 1]
 */
 
+const arrayOrdinato = [1, 3, 5];
+
+function invertArray(array) {
+    return array.reverse();
+}
+
+console.log(invertArray(arrayOrdinato));
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
     {
