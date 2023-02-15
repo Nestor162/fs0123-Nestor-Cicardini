@@ -12,4 +12,9 @@ function addTask(currentTask) {
     let li = document.createElement("li");
     li.innerText = currentTask;
     container.append(li);
+    clearInput();
+}
+
+function clearInput() {
+    document.getElementById("input").value = "";
 }
