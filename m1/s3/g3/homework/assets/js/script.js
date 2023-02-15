@@ -41,11 +41,7 @@ function addDeleteButton(idTask) {
     container.append(span);
     span.className = "cross";
     listElements[idTask].appendChild(span);
+    span.addEventListener("click", function () {
+        this.remove();
+    });
 }
-
-// let closeButton = document.getElementsByTagName("span");
-// closeButton.addEventListener("click", deleteTask());
-
-// function deleteTask() {
-//     listElements[idTask].delete();
-// }
