@@ -20,6 +20,7 @@ function addTask(currentTask) {
     idTask++;
     container.append(li);
     clearInput();
+    addDeleteButton();
 }
 
 // questa funzione semplicemente svuota la casella di input
@@ -31,3 +32,13 @@ let list = document.querySelector("ul");
 list.addEventListener("click", function () {
     event.target.style = "text-decoration: line-through";
 });
+
+let listElements = document.getElementsByTagName("li");
+
+function addDeleteButton() {
+    let span = document.createElement("span");
+    span.innerHTML = "&#10060;";
+    container.append(span);
+    span.className = "cross";
+    listElements[idTask].appendChild(span);
+}
