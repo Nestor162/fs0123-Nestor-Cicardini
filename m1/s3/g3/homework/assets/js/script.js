@@ -1,7 +1,8 @@
 let button = document.getElementById("add");
 let container = document.getElementById("task_container");
+let idTask = 0;
 
-// al click del bottone scatenare la funzione 'getTask'
+// al click del bottone scatena la funzione 'getTask'
 button.addEventListener("click", getTask);
 
 // questa funzione ricava il testo dell'imput e 'chiama' a sua volta la funzione 'addTask'
@@ -14,6 +15,9 @@ function getTask() {
 function addTask(currentTask) {
     let li = document.createElement("li");
     li.innerText = currentTask;
+    li.className = "task_item";
+    li.setAttribute("id", `${idTask}`);
+    idTask++;
     container.append(li);
     clearInput();
 }
@@ -23,4 +27,7 @@ function clearInput() {
     document.getElementById("input").value = "";
 }
 
-function completeTask(params) {}
+let list = document.querySelector("ul");
+list.addEventListener("click", function () {
+    event.target.style = "text-decoration: line-through";
+});
