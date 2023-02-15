@@ -40,8 +40,10 @@ function addDeleteButton(idTask) {
     span.innerHTML = "&#10060;";
     container.append(span);
     span.className = "cross";
-    listElements[idTask].appendChild(span);
-    span.addEventListener("click", function () {
-        this.remove();
-    });
+    let currentTask = listElements[idTask];
+    currentTask.appendChild(span);
+    // span.addEventListener("click", function () {
+    //     this.remove();
+    //     currentTask.remove();
+    // });
 }
