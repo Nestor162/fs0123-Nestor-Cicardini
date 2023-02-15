@@ -44,6 +44,8 @@ function addDeleteButton(idTask) {
 }
 
 // let closeButton = document.getElementsByTagName("span");
-// closeButton.addEventListener("click", deleteTask);
+// closeButton.addEventListener("click", deleteTask());
 
-// function deleteTask() {}
+// function deleteTask() {
+//     listElements[idTask].delete();
+// }
