@@ -17,10 +17,10 @@ function addTask(currentTask) {
     li.innerText = currentTask;
     li.className = "task_item";
     li.setAttribute("id", `${idTask}`);
-    idTask++;
     container.append(li);
     clearInput();
-    addDeleteButton();
+    addDeleteButton(idTask);
+    idTask++;
 }
 
 // questa funzione semplicemente svuota la casella di input
@@ -35,10 +35,15 @@ list.addEventListener("click", function () {
 
 let listElements = document.getElementsByTagName("li");
 
-function addDeleteButton() {
+function addDeleteButton(idTask) {
     let span = document.createElement("span");
     span.innerHTML = "&#10060;";
     container.append(span);
     span.className = "cross";
     listElements[idTask].appendChild(span);
 }
+
+// let closeButton = document.getElementsByTagName("span");
+// closeButton.addEventListener("click", deleteTask);
+
+// function deleteTask() {}
