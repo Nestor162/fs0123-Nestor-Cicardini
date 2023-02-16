@@ -29,8 +29,8 @@ function clearInput() {
 }
 
 let list = document.querySelector("ul");
-list.addEventListener("click", function () {
-    event.target.style = "text-decoration: line-through";
+list.addEventListener("click", function (e) {
+    e.target.style = "text-decoration: line-through";
 });
 
 let listElements = document.getElementsByTagName("li");
