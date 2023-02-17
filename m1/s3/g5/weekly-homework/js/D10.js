@@ -574,23 +574,27 @@ halfTree(5);
 *****
 
 */
-// NON HO FATTO IN TEMPO
 
-// function tree(n) {
-//     let spazio = " ";
-//     let asterischo = "*";
-//     let carattere = "";
+function tree(n) {
+    let carattere = "";
+    let div = document.createElement("div");
 
-//     for (let j = n; j < 0; n--) {
-//         carattere += spazio;
-//         for (let i = 0; i < n; i++) {
-//             carattere += asterischo;
-//         }
-//     }
-//     console.log(carattere);
-// }
-
-// tree(6);
+    //loop generale
+    for (let i = 0; i < n; i++) {
+        // stampare spazi
+        for (let j = 1; j <= n - i; j++) {
+            carattere += " ";
+        }
+        // stampare asterischi
+        for (let k = 0; k < 2 * i - 1; k++) {
+            carattere += "*";
+        }
+        carattere += "<br>";
+        div.innerHTML = carattere;
+        document.body.appendChild(div);
+    }
+}
+tree(6);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
