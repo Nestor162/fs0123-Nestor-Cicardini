@@ -419,6 +419,27 @@ console.log(searchByTitle("Avengers"));
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+function searchAndDivide(titleSearch) {
+    const division = {
+        match: [],
+        unmatch: [],
+    };
+    let expression = `.*${titleSearch}.*`;
+    let re = new RegExp(expression, "g");
+
+    for (film of movies) {
+        if (re.test(film.Title)) {
+            division.match.push(film.Title);
+        } else {
+            division.unmatch.push(film.Title);
+        }
+    }
+
+    return division;
+}
+
+console.log(searchAndDivide("Avengers"));
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
