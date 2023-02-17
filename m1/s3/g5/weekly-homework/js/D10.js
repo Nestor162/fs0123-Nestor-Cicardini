@@ -583,7 +583,7 @@ function tree(n) {
     for (let i = 0; i <= n; i++) {
         // stampare spazi
         for (let j = 1; j <= n - i; j++) {
-            carattere += "&nbsp;";
+            carattere += "&nbsp;&nbsp;";
         }
         // stampare asterischi
         for (let k = 0; k < 2 * i - 1; k++) {
@@ -594,7 +594,7 @@ function tree(n) {
         document.body.appendChild(div);
     }
 }
-tree(3);
+tree(6);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
