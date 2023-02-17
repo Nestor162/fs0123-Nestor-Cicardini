@@ -502,6 +502,15 @@ addBg();
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+function addElement() {
+    let list = document.getElementById("myList");
+    let li = document.createElement("li");
+    li.innerText = "Link 4";
+    list.append(li);
+}
+
+addElement();
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
