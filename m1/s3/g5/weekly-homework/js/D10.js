@@ -490,6 +490,14 @@ printTd();
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+function addBg() {
+    let links = document.getElementsByTagName("a");
+    for (a of links) {
+        a.style = "background-color: pink";
+    }
+}
+addBg();
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
