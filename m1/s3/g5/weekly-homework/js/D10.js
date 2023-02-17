@@ -197,7 +197,6 @@ console.log(howManyDays(new Date("2/1/2023")));
 function isTodayMyBirthday() {
     let today = new Date();
     today = today.getDate() + "/" + (today.getMonth() + 1);
-    console.log(today);
     return today === "3/5" ? true : false;
 }
 console.log(isTodayMyBirthday());
@@ -210,6 +209,17 @@ console.log(isTodayMyBirthday());
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
+
+const prova = {
+    prop1: "hello",
+    prop2: "word",
+};
+
+function deleteProp(obj, str) {
+    delete obj[str];
+    return obj;
+}
+console.log(deleteProp(prova, "prop2"));
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
