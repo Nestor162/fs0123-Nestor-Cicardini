@@ -574,10 +574,23 @@ halfTree(5);
 *****
 
 */
+// NON HO FATTO IN TEMPO
 
-// function tree(n) {}
+// function tree(n) {
+//     let spazio = " ";
+//     let asterischo = "*";
+//     let carattere = "";
 
-// tree(3);
+//     for (let j = n; j < 0; n--) {
+//         carattere += spazio;
+//         for (let i = 0; i < n; i++) {
+//             carattere += asterischo;
+//         }
+//     }
+//     console.log(carattere);
+// }
+
+// tree(6);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
