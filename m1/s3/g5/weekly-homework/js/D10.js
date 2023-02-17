@@ -549,6 +549,20 @@ addClass();
 
 */
 
+function halfTree(n) {
+    let asterischo = "*";
+    let asterischi = "";
+
+    for (let i = 0; i < n; i++) {
+        let div = document.createElement("div");
+        asterischi += asterischo;
+        div.innerHTML = asterischi;
+        document.body.appendChild(div);
+    }
+}
+
+halfTree(3);
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
