@@ -525,6 +525,16 @@ function clearList() {
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+function addClass() {
+    let tr = document.querySelectorAll("tr");
+
+    for (row of tr) {
+        row.classList.add("my-class");
+    }
+}
+
+addClass();
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
