@@ -328,11 +328,16 @@ console.log(deleteProp(prova, "prop2"));
 */
 
 function newestMovie() {
+    let recent = 0;
     for (film in movies) {
-        console.log(film);
+        if (movies[film].Year > recent) {
+            recent = movies[film].Year;
+        }
     }
+
+    return recent;
 }
-newestMovie();
+console.log(newestMovie());
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
