@@ -1,6 +1,6 @@
 let tag = document.querySelector("body");
-const divConteiner = document.createElement('div');
-divConteiner.classList.add('divConteiner');
+const divConteiner = document.createElement("div");
+divConteiner.classList.add("divConteiner");
 tag.prepend(divConteiner);
 
 //Questa serie di funzioni crea le diverse parti della prima 'slide' (Welcome)
@@ -9,7 +9,6 @@ let img = document.createElement("img");
 img.src = "assets/img/epicode_logo.png";
 img.className += "logo";
 tag.prepend(img);
-
 
 function createTitle() {
     //welcome page
@@ -279,7 +278,6 @@ function getRandomQuiz(n) {
 // si puo scegliere il minimo e il massimo
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-
 }
 
 let conteggioDomande = 1;
@@ -340,7 +338,6 @@ let userAnswers = [];
 function getAnswer() {
     let radios = document.querySelectorAll("input[type = radio]");
 
-
     // ottiene risposta dall'utente e la salva in un array, poi passa alla domanda successiva
     for (let i = 0; i < radios.length; i++) {
         radios[i].addEventListener("click", function () {
@@ -350,7 +347,6 @@ function getAnswer() {
         });
     }
 }
-
 
 function createBenchPage() {
     // svuota HTML precedente
@@ -362,20 +358,20 @@ function createBenchPage() {
         isTimerRunning = false; // imposta la variabile a false per indicare che il Timer è stato fermato
     }
 
-    // crea logo e sfondo
-    /* createImg(); */
-
     // se si arriva all'ultima domanda passare a pagina dei risultati
     // altrimenti si stampa una nuova domanda
 
-    indexDomanda === domandeRandom.length ? displayResult() : printQuiz();
-    let questPos = document.createElement('div')
-    questPos.id += 'position'
-    questPos.innerHTML = `<span class="white">QUESTION ${conteggioDomande}</span><span class="questionSpan">/ ${domandeRandom.length}</span>`
+    if (indexDomanda === domandeRandom.length) {
+        displayResult();
+    } else {
+        printQuiz();
+        let questPos = document.createElement("div");
+        questPos.id += "position";
+        questPos.innerHTML = `<span class="white">QUESTION ${conteggioDomande}</span><span class="questionSpan">/ ${domandeRandom.length}</span>`;
 
-    divConteiner.appendChild(questPos)
+        divConteiner.appendChild(questPos);
+    }
 }
-
 
 function displayResult() {
     divConteiner.innerHTML = "";
@@ -412,26 +408,20 @@ function displayResult() {
     percentUncorrect.append(percent2);
     percentUncorrect.append(uncorrectNum);
 
-
-    let textInsideCircle = document.createElement('div');
-    textInsideCircle.classList.add('text-inside-circle');
-    let text1 = document.createElement('p');
-    text1.id = 'number-inside-circle';
-    let text2 = document.createElement('p');
-    text2.classList.add('remaining-text');
+    let textInsideCircle = document.createElement("div");
+    textInsideCircle.classList.add("text-inside-circle");
+    let text1 = document.createElement("p");
+    text1.id = "number-inside-circle";
+    let text2 = document.createElement("p");
+    text2.classList.add("remaining-text");
     divConteiner.append(textInsideCircle);
     textInsideCircle.append(text1);
     textInsideCircle.append(text2);
-
-
-
-
 
     divConteiner.append(divCanvas);
     divCanvas.append(percentCorrect);
     divCanvas.append(canvas);
     divCanvas.append(percentUncorrect);
-
 
     const btnChart = document.createElement("button");
     btnChart.textContent = "rate us".toUpperCase();
@@ -547,13 +537,6 @@ function displayResult() {
     }
     let uncorrectAnswers = domandeRandom.length - correctAnswers;
 
-
-
-
-
-
-
-
     const data = {
         labels: ["Correct", "Wrong"],
         datasets: [
@@ -562,14 +545,16 @@ function displayResult() {
                 data: [uncorrectAnswers, correctAnswers],
                 backgroundColor: ["rgb(255, 99, 132)", "rgb(75, 192, 192)"],
                 hoverOffset: 15,
-
             },
         ],
-
     };
 
-    let res1 = (Math.round(correctAnswers / domandeRandom.length * 100)).toFixed(2);
-    let res2 = (Math.round(uncorrectAnswers / domandeRandom.length * 100)).toFixed(2);
+    let res1 = Math.round(
+        (correctAnswers / domandeRandom.length) * 100
+    ).toFixed(2);
+    let res2 = Math.round(
+        (uncorrectAnswers / domandeRandom.length) * 100
+    ).toFixed(2);
     correctLabel.textContent = data.labels[0];
     percent1.textContent = `${res1} %`;
     correctNum.textContent = `${correctAnswers}\/${domandeRandom.length} questions`;
@@ -578,23 +563,19 @@ function displayResult() {
     uncorrectNum.textContent = `${uncorrectAnswers}\/${domandeRandom.length} questions`;
 
     if (res1 >= 60) {
-        text1.innerHTML = 'Congratulations you passed this exam'
-        text2.innerHTML = 'We\'ll send you the certificate in few minutes'
+        text1.innerHTML = "Congratulations you passed this exam";
+        text2.innerHTML = "We'll send you the certificate in few minutes";
     } else {
-        text1.innerHTML = 'Sorry you didn\'t pass this exam'
-        text2.innerHTML = 'Retry it'
+        text1.innerHTML = "Sorry you didn't pass this exam";
+        text2.innerHTML = "Retry it";
     }
-
-
-
 
     canvas = document.querySelector("#myChart");
     new Chart(canvas, {
         type: "doughnut",
         data: data,
         options: {
-
-            cutout: '73%',
+            cutout: "73%",
             borderWidth: 0,
             borderRadius: 5,
             hoverBorderWidth: 0,
@@ -603,27 +584,20 @@ function displayResult() {
                 legend: {
                     display: false,
                 },
-                centerText: 'ciao',
+                centerText: "ciao",
                 tooltip: {
                     enabled: false,
                 },
                 shadow: {
                     enabled: true,
-                    color: 'rgba(0, 0, 0, 0.5)',
+                    color: "rgba(0, 0, 0, 0.5)",
                     blur: 15,
                     offsetX: 5,
                     offsetY: 5,
-                }
+                },
             },
-
-
-
         },
-
-
     });
-
-
 }
 
 ////JS
@@ -741,4 +715,3 @@ function startTimer(seconds) {
         isTimerRunning = true; // Imposta la variabile a true per indicare che il Timer è in esecuzione
     }
 }
-
